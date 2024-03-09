@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  height: 100vh;
+  width: 100vw;
+  background-color: salmon;
+  overflow: hidden;
+}
+.content {
+  width: 35%;
+  position: relative;
+  left: 200px;
+  top: 100px;
+
+  /* border: 1px solid rgb(0, 51, 255); */
+}
+.text1 {
+  height: 40px;
+  display: flex;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: 900s;
+  color: rgb(16, 22, 188);
+  gap: 20px;
+  font-size: 20px;
+}
+.text1 img {
+  height: 100%;
+}
+.button {
+  height: 100px;
+  width: 40%;
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+  /* border: 1px solid blue; */
+}
+#add {
+    cursor: pointer;
+  height: 55%;
+  width: 90%;
+  border-radius: 25px;
+  outline: none;
+  border: none;
+  background-color: #f4ac26;
+  display: flex;
+
+  align-items: center;
+  padding: 10px;
+  font-size: 17px;
+  font-weight: 900;
+  /* justify-content: space-evenly
+    ; */
+  gap: 20px;
+}
+#add img {
+  height: 70%;
+}
+.box {
+    width: 100%;
+    height: 500px;
+    overflow: auto; 
+    &::-webkit-scrollbar {
+      width: 0px;
+    }
+  }
+.pp {
+  width: 95%;
+  height: 150px;
+  outline: none;
+  padding: 7px;
+  font-size: 25px;
+  font-weight: 900;
+  border: 1px solid rgb(255, 0, 225);
+  border-radius: 20px;
+  background-color: rgb(255, 255, 255);
+  margin-bottom: 30px;
+  overflow-y: auto;
+  position: relative;
+ 
+}
+
+.delete{
+    height: 30px;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    cursor: pointer;
+}
